@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 25vh;
+}
+
+li.nav-item.nav-cart {
+  margin: 1px 10px;
+  position: relative;
+}
+
+li.nav-item.nav-cart a:hover {
+  color: #000000;
+}
+
+li.nav-item.nav-cart a {
+  color: #747474;
+  transition: color .2s;
+}
+
+span#product-count {
+  font-size: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 270px;
+  padding: 0 5px;
+  border: solid 2px;
+  bottom: 0;
+  right: -5px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-item img {
+  filter: brightness(0.8);
+}
+
+.category-item span {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 7px #000;
+}
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.product__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__action {
+  position: absolute;
+  left: -50px;
+  bottom: 35px;
+  background-color: #ffffffba;
+  padding: 10px;
+  transition: left 0.4s;
+}
+
+.product__image--holder img {
+  filter: brightness(1);
+  transition: filter 0.4s;
+}
+.product__image:hover {
+  .product__action {
+    left: 20px;
+  }
+  .product__image--holder img{
+    filter: brightness(0.7);
+  }
+}
+
+.product__image img {
+  width: 100%;
+}
+
+.product__image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+#dataTable td:first-child {
+  width: 2%;
+}
